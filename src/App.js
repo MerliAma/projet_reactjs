@@ -13,9 +13,10 @@ function App() {
   return (
       <>
           <div className='App'>
-              <Navbar expand="lg" className="bg-body-tertiary">
+              {/* 1. NAVBAR */}
+              <Navbar expand="lg" className="bg-body-tertiary fs-5">
                   <Container fluid>
-                      <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                      <Navbar.Brand href="#" className="fs-4">MonLogo</Navbar.Brand>
                       <Navbar.Toggle aria-controls="navbarScroll" />
                       <Navbar.Collapse id="navbarScroll">
                           <Nav
@@ -23,30 +24,27 @@ function App() {
                               style={{ maxHeight: '100px' }}
                               navbarScroll
                           >
-                              <Nav.Link href="#action1">Home</Nav.Link>
-                              <Nav.Link href="#action2">Link</Nav.Link>
-                              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                              <Nav.Link href="#action1">Accueil</Nav.Link>
+                              <Nav.Link href="#action2">Menu 1</Nav.Link>
+                              <NavDropdown title="Menu 2" id="navbarScrollingDropdown">
+                                  <NavDropdown.Item href="#action3">Element 1</NavDropdown.Item>
                                   <NavDropdown.Item href="#action4">
-                                      Another action
+                                      Element 2
                                   </NavDropdown.Item>
                                   <NavDropdown.Divider />
                                   <NavDropdown.Item href="#action5">
-                                      Something else here
+                                      Autres Options
                                   </NavDropdown.Item>
                               </NavDropdown>
-                              <Nav.Link href="#" disabled>
-                                  Link
-                              </Nav.Link>
                           </Nav>
                           <Form className="d-flex">
                               <Form.Control
                                   type="search"
-                                  placeholder="Search"
+                                  placeholder="Rechercher..."
                                   className="me-2"
                                   aria-label="Search"
                               />
-                              <Button variant="outline-success">Search</Button>
+                              <Button variant="outline-primary">Rechercher </Button>
                           </Form>
                       </Navbar.Collapse>
                   </Container>
@@ -64,7 +62,7 @@ function App() {
                   </Container>
               </header>
 
-              {/* 2. SECTION POUR LES CARTES */}
+              {/* 3. SECTION POUR LES CARTES */}
               <Container>
                   {/* Row md={3} force automatiquement l'alignement de 3 colonnes sur grand écran */}
                   <Row xs={1} md={3} className="g-4 mb-5">
@@ -73,8 +71,8 @@ function App() {
                           <Card>
                               <Card.Body>
                                   <Card.Title>Carte n°1</Card.Title>
-                                  <Card.Text>Contenu de la première carte pour l'exercice.</Card.Text>
-                                  <Button variant="outline-primary">Visiter</Button>
+                                  <Card.Text>Contenu de la première carte pour le CheckPoint.</Card.Text>
+                                  <Button variant="outline-primary">Voir</Button>
                               </Card.Body>
                           </Card>
                       </Col>
@@ -84,8 +82,8 @@ function App() {
                           <Card>
                               <Card.Body>
                                   <Card.Title>Carte n°2</Card.Title>
-                                  <Card.Text>Contenu de la deuxième carte pour l'exercice.</Card.Text>
-                                  <Button variant="outline-primary">Visiter</Button>
+                                  <Card.Text>Contenu de la deuxième carte pour le CheckPoint.</Card.Text>
+                                  <Button variant="outline-primary">Voir</Button>
                               </Card.Body>
                           </Card>
                       </Col>
@@ -95,8 +93,8 @@ function App() {
                           <Card>
                               <Card.Body>
                                   <Card.Title>Carte n°3</Card.Title>
-                                  <Card.Text>Contenu de la troisième carte pour l'exercice.</Card.Text>
-                                  <Button variant="outline-primary">Visiter</Button>
+                                  <Card.Text>Contenu de la troisième carte pour le CheckPoint.</Card.Text>
+                                  <Button variant="outline-primary">Voir</Button>
                               </Card.Body>
                           </Card>
                       </Col>
